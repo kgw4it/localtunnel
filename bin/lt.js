@@ -77,7 +77,7 @@ if (typeof argv.port !== 'number') {
     local_key: argv.localKey,
     local_ca: argv.localCa,
     allow_invalid_cert: argv.allowInvalidCert,
-    tsl: argv.tls
+    tls: argv.tls
   }).catch(err => {
     throw err;
   });
