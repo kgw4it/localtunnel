@@ -46,6 +46,10 @@ const { argv } = yargs
     alias: 'open',
     describe: 'Opens the tunnel URL in your browser',
   })
+  .options('tls', {
+    default: true,
+    describe: 'Establish a tls connection to server',
+  })
   .option('print-requests', {
     describe: 'Print basic request info',
   })
